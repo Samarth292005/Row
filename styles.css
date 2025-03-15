@@ -1,0 +1,193 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* Header and Navigation */
+header {
+    background: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 1.2em;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #ff6600;
+    border-radius: 5px;
+}
+
+/* Hero Section */
+.hero {
+    background: url('sofa-hero.jpg') no-repeat center center/cover;
+    height: 100vh;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.shop-btn {
+    background-color: #ff6600;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.shop-btn:hover {
+    background-color: #cc5200;
+}
+
+/* About Section */
+.about {
+    background-color: #ffffff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.about .container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Shop Section */
+.shop {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.shop .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.product-cards {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.product-card {
+    background-color: white;
+    padding: 20px;
+    width: 30%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.product-card h3 {
+    margin: 20px 0;
+    font-size: 1.5em;
+}
+
+.buy-btn {
+    background-color: #ff6600;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.buy-btn:hover {
+    background-color: #cc5200;
+}
+
+/* Contact Section */
+.contact {
+    background-color: #ffffff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact button {
+    background-color: #ff6600;
+    color: white;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact button:hover {
+    background-color: #cc5200;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
